@@ -1,2 +1,38 @@
-# Multiple-QR-Code-Scanner
- Quickly scan multiple QR codes at once! BatchScan efficiently reads and displays a list of links from your uploaded images. Save time and effort with our easy-to-use bulk QR code scanner.
+# 二维码批量扫描系统
+
+这是一个简单易用的二维码批量识别工具，可以快速识别多个图片中的二维码并提取链接。
+
+## 使用方法
+
+1. 双击运行 `QRScanner.exe`
+2. 系统会自动打开浏览器窗口，显示程序界面
+3. 您可以通过以下方式上传图片：
+   - 直接将图片拖拽到虚线框内
+   - 点击虚线框选择文件（支持多选）
+4. 上传完成后，您可以：
+   - 在"已上传文件"列表中查看所有文件
+   - 点击"开始识别"按钮进行批量识别
+   - 点击"清空文件"按钮清除所有文件
+5. 识别结果会显示在下方表格中，包含：
+   - 文件名
+   - 二维码类型
+   - 识别出的链接（可点击访问）
+
+## 支持的图片格式
+
+- PNG
+- JPG/JPEG
+- GIF
+
+## 注意事项
+
+1. 首次运行时可能会被防火墙拦截，请允许程序访问网络
+2. 程序会在本地启动一个Web服务器（端口5000）
+3. 上传的图片会被临时保存，关闭程序后自动清理
+4. 如果浏览器没有自动打开，请手动访问：http://127.0.0.1:5000
+
+## 系统要求
+
+- Windows 7/8/10/11
+- 不需要安装Python或其他依赖
+- 需要允许程序访问网络（本地访问） 
